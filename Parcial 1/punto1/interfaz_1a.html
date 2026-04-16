@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz 1</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
+        html, body {
+        height: 100%;
+        }
+
+        body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        background-color: #fef6e1;
+        }
+        
+        .main_container{
+            padding: 50px;
+            height: 100vh;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        header{
+            grid-column: 1 / 4;
+            background-color: #073b63;
+        }
+        
+        main{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 3fr 3fr 4fr;
+            gap: 50px;
+        }
+
+        .cuadro{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #cuadro1{
+            background-color: #ee4433;
+        }
+        #cuadro2{
+            background-color: #8cbe8b;
+        }
+        #cuadro3{
+            background-color: #8cbe8b;
+        }
+        #cuadro4{
+            background-color: #e9ab36;
+        }
+        #cuadro5{
+            background-color: #fef6e1;
+        }
+        #cuadro6{
+            background-color: #fef6e1;
+        }
+        #cuadro7{
+            display: grid;
+            grid-template-rows: 2fr 1fr 1fr 1fr;
+            gap: 20px;
+            background-color: #fef6e1;
+        }
+        #cuadro8{
+            background-color: #199398;
+            height: 70%;
+            align-self: center;
+        }
+        #cuadro9{
+            background-color: #8abf8b;
+            border-radius: 5px;
+            height: 90%;
+            align-self: center;
+        }
+
+        .rombo{
+            border-radius: 5px;
+        }
+        #rombo1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 120px;
+            transform: rotate(45deg);
+            background-color: #179199;
+        }
+        #rombo2{
+            width: 80px;
+            height: 80px;
+            background-color: #ee891f;
+        }
+
+        #subcuadro4_1{
+            width: 70%;
+            height: 70%;
+            background-color: #fef6e1;
+            border-radius: 4px;
+        }
+        #subcuadro4_2{
+            width: 70%;
+            height: 70%;
+            background-color: #ee4433;
+            border-radius: 4px;
+        }
+
+        #circulo5{
+            aspect-ratio: 1 / 1;
+            height: 100%;
+            border-radius: 100%;
+            background-color: #8a3b50;
+        }
+
+        #circulo6{
+            aspect-ratio: 1 / 1;
+            height: 80%;
+            border-radius: 100%;
+            background-color: #ef8a20;
+        }
+
+        #subcuadro7_1{
+            background-color: #f08b23;
+            border-radius: 5px;
+        }
+        #subcuadro7_2{
+            background-color: #f08b23;
+            border-radius: 5px;
+        }
+        #subcuadro7_3{
+            background-color: #f96f6c;
+            border-radius: 5px;
+        }
+        #subcuadro7_4{
+            background-color: #f96f6c;
+            border-radius: 5px;
+        }
+
+        #subcuadro8_1{
+            width: 70%;
+            height: 70%;
+            background-color: #fef6e1;
+            border-radius: 4px;
+        }
+        #subcuadro8_1_1{
+            width: 70%;
+            height: 70%;
+            background-color: #2ea19e;
+            border-radius: 4px;
+        }
+
+        #subcuadro9_1{
+            width: 70%;
+            height: 70%;
+            background-color: #fef6e1;
+            border-radius: 4px;
+        }
+        #subcuadro9_1_1{
+            width: 70%;
+            height: 70%;
+            background-color: #479a66;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        
+        <main>
+            <header></header>
+            <div class="cuadro" id="cuadro1">
+                
+            </div>
+            <div class="cuadro" id="cuadro2">
+                <div class="rombo" id="rombo1">
+                    <div class="rombo" id="rombo2"></div>
+                </div>
+            </div>
+            <div class="cuadro" id="cuadro3"></div>
+            <div class="cuadro" id="cuadro4">
+                <div class="cuadro" id="subcuadro4_1">
+                    <div class="cuadro" id="subcuadro4_2"></div>
+                </div>
+            </div>
+            <div class="cuadro" id="cuadro5">
+                <div id="circulo5"></div>
+            </div>
+            <div class="cuadro" id="cuadro6">
+                <div id="circulo6"></div>
+            </div>
+            <div id="cuadro7">
+                <div id="subcuadro7_1"></div>
+                <div id="subcuadro7_2"></div>
+                <div id="subcuadro7_3"></div>
+                <div id="subcuadro7_4"></div>
+            </div>
+            <div class="cuadro" id="cuadro8">
+                <div class="cuadro" id="subcuadro8_1">
+                    <div class="cuadro" id="subcuadro8_1_1"></div>
+                </div>
+            </div>
+            <div class="cuadro" id="cuadro9">
+                <div class="cuadro" id="subcuadro9_1">
+                    <div class="cuadro" id="subcuadro9_1_1"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

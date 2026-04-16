@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gastos</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <span>Control Financiero</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <span class="nav-icon">⌂</span> Inicio
+        </a>
+        <a href="ingresos.html" class="nav-item">
+          <span class="nav-icon">↑</span> Ingresos
+        </a>
+        <a href="gastos.html" class="nav-item active">
+          <span class="nav-icon">↓</span> Gastos
+        </a>
+        <a href="reportes.html" class="nav-item">
+          <span class="nav-icon">◎</span> Reportes
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="login.html" class="btn-logout">← Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="main-header">
+        <div>
+          <h2>Gastos</h2>
+          <p class="header-sub">Resumen de egresos · Marzo 2025</p>
+        </div>
+        <button class="btn-primary btn-primary--danger">+ Registrar gasto</button>
+      </header>
+
+      <section class="cards-grid">
+        <div class="card card--gastos">
+          <div class="card-top"></div>
+          <p class="card-label">Total gastos</p>
+          <h3 class="card-value">$2,130.000</h3>
+          <span class="card-badge badge--down">+8.5% vs anterior</span>
+        </div>
+        <div class="card card--ahorro">
+          <div class="card-top"></div>
+          <p class="card-label">Gasto promedio</p>
+          <h3 class="card-value">$355.000</h3>
+          <span class="card-badge badge--neutral">6 registros</span>
+        </div>
+        <div class="card card--saldo">
+          <div class="card-top"></div>
+          <p class="card-label">Mayor gasto</p>
+          <h3 class="card-value">$700.000</h3>
+          <span class="card-badge badge--down">Arriendo</span>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <div class="table-header">
+          <h3>Detalle de gastos</h3>
+          <input type="search" class="table-search" placeholder="Buscar gasto...">
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Descripción</th>
+              <th>Categoría</th>
+              <th>Monto</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01/03/2025</td>
+              <td>Arriendo</td>
+              <td><span class="tag tag--red">Vivienda</span></td>
+              <td class="amount amount--negative">$700.000</td>
+              <td><span class="status status--active">Pagado</span></td>
+            </tr>
+            <tr>
+              <td>03/03/2025</td>
+              <td>Mercado semanal</td>
+              <td><span class="tag tag--orange">Alimentación</span></td>
+              <td class="amount amount--negative">$480.000</td>
+              <td><span class="status status--active">Pagado</span></td>
+            </tr>
+            <tr>
+              <td>07/03/2025</td>
+              <td>Transporte mensual</td>
+              <td><span class="tag tag--blue">Transporte</span></td>
+              <td class="amount amount--negative">$350.000</td>
+              <td><span class="status status--active">Pagado</span></td>
+            </tr>
+            <tr>
+              <td>10/03/2025</td>
+              <td>Servicios públicos</td>
+              <td><span class="tag tag--purple">Servicios</span></td>
+              <td class="amount amount--negative">$300.000</td>
+              <td><span class="status status--pending">Pendiente</span></td>
+            </tr>
+            <tr>
+              <td>15/03/2025</td>
+              <td>Cine y salidas</td>
+              <td><span class="tag tag--green">Entretenimiento</span></td>
+              <td class="amount amount--negative">$200.000</td>
+              <td><span class="status status--active">Pagado</span></td>
+            </tr>
+            <tr>
+              <td>22/03/2025</td>
+              <td>Varios</td>
+              <td><span class="tag tag--gray">Otros</span></td>
+              <td class="amount amount--negative">$100.000</td>
+              <td><span class="status status--active">Pagado</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

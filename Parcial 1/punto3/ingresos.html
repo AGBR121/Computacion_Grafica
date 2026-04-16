@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingresos</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  </head>
+<body>
+
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <span>Control Financiero</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <span class="nav-icon">⌂</span> Inicio
+        </a>
+        <a href="ingresos.html" class="nav-item active">
+          <span class="nav-icon">↑</span> Ingresos
+        </a>
+        <a href="gastos.html" class="nav-item">
+          <span class="nav-icon">↓</span> Gastos
+        </a>
+        <a href="reportes.html" class="nav-item">
+          <span class="nav-icon">◎</span> Reportes
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="login.html" class="btn-logout">← Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="main-header">
+        <div>
+          <h2>Ingresos</h2>
+          <p class="header-sub">Resumen de entradas · Marzo 2025</p>
+        </div>
+        <button class="btn-primary">+ Nuevo ingreso</button>
+      </header>
+
+      <section class="cards-grid">
+        <div class="card card--ingresos">
+          <div class="card-top"></div>
+          <p class="card-label">Total ingresos</p>
+          <h3 class="card-value">$3,200.000</h3>
+          <span class="card-badge badge--up">+12% vs anterior</span>
+        </div>
+        <div class="card card--ahorro">
+          <div class="card-top"></div>
+          <p class="card-label">Ingreso promedio</p>
+          <h3 class="card-value">$800.000</h3>
+          <span class="card-badge badge--neutral">4 entradas</span>
+        </div>
+        <div class="card card--saldo">
+          <div class="card-top"></div>
+          <p class="card-label">Mayor ingreso</p>
+          <h3 class="card-value">$1,500.000</h3>
+          <span class="card-badge badge--up">Salario</span>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <div class="table-header">
+          <h3>Detalle de ingresos</h3>
+          <input type="search" class="table-search" placeholder="Buscar ingreso...">
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Descripción</th>
+              <th>Categoría</th>
+              <th>Monto</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01/03/2025</td>
+              <td>Salario mensual</td>
+              <td><span class="tag tag--green">Empleo</span></td>
+              <td class="amount amount--positive">$1,500.000</td>
+              <td><span class="status status--active">Recibido</span></td>
+            </tr>
+            <tr>
+              <td>05/03/2025</td>
+              <td>Proyecto freelance</td>
+              <td><span class="tag tag--blue">Freelance</span></td>
+              <td class="amount amount--positive">$800.000</td>
+              <td><span class="status status--active">Recibido</span></td>
+            </tr>
+            <tr>
+              <td>12/03/2025</td>
+              <td>Venta de artículos</td>
+              <td><span class="tag tag--purple">Ventas</span></td>
+              <td class="amount amount--positive">$450.000</td>
+              <td><span class="status status--active">Recibido</span></td>
+            </tr>
+            <tr>
+              <td>20/03/2025</td>
+              <td>Dividendos inversión</td>
+              <td><span class="tag tag--blue">Inversión</span></td>
+              <td class="amount amount--positive">$450.000</td>
+              <td><span class="status status--pending">Pendiente</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

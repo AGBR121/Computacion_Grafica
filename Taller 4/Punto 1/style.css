@@ -1,0 +1,111 @@
+/* Fondo del body con degradado vertical de color oscuro a blanco */
+body{
+    background: linear-gradient(rgb(16, 16, 16),white);
+}
+
+/* Contenedor principal: ocupa toda la pantalla y centra su contenido */
+.container{
+    width: 100%;
+    height: 100vh; /* Altura igual al alto de la ventana del navegador */
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+
+/* Tarjeta del login: fila con sombra suave */
+.login-container{
+    display: flex;
+    width: 650px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2); /* Sombra sutil en la parte inferior */
+}
+
+/* Ambas secciones ocupan el mismo espacio dentro del login-container */
+.register, .login{
+    flex: 1; /* Cada sección toma el 50% del ancho disponible */
+}
+
+.register{
+    padding: 40px;
+    position: relative;
+}
+
+.register h3{
+    color: #797979;
+    margin-bottom: 30px;
+}
+
+/* Inputs con estilo de línea inferior, sin bordes en los otros lados */
+.register input{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #a8a8a8; /* Solo muestra el borde inferior */
+    color: #333;
+}
+
+/* Botón de envío con fondo oscuro */
+.register .submit{
+    width: auto;
+    padding: 10px;
+    background: #120c06;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+/* Sección derecha con degradado diagonal de verde oscuro a gris claro */
+.login{
+    background-image: linear-gradient(to bottom right, #101515, #dce4df);
+    padding: 40px;
+}
+
+.login h3{
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+/* Ícono posicionado dentro del botón, a la izquierda */
+.login button i{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+/* Botones de redes sociales: ancho completo con sombra y cursor pointer */
+.login button{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    position: relative; /* Necesario para que el ícono se posicione dentro */
+}
+
+/* Botón de Facebook */
+.login .fb{
+    background: #3b5999;
+    border-style: none;
+    color: #fff;
+}
+
+/* Botón de Twitter */
+.login .tw{
+    background: #55acef;
+    border-style: none;
+    color: #fff;
+}
+
+/* Botón de correo */
+.login .correo{
+    background: #33d4ce;
+    border-style: none;
+    color: #fff;
+}

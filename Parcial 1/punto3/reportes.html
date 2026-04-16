@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reportes</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <span>Control Financiero</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <span class="nav-icon">⌂</span> Inicio
+        </a>
+        <a href="ingresos.html" class="nav-item">
+          <span class="nav-icon">↑</span> Ingresos
+        </a>
+        <a href="gastos.html" class="nav-item">
+          <span class="nav-icon">↓</span> Gastos
+        </a>
+        <a href="reportes.html" class="nav-item active">
+          <span class="nav-icon">◎</span> Reportes
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="login.html" class="btn-logout">← Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="main-header">
+        <div>
+          <h2>Reportes</h2>
+          <p class="header-sub">Análisis financiero · Marzo 2025</p>
+        </div>
+        <button class="btn-primary">↓ Exportar reporte</button>
+      </header>
+
+      <!-- Tarjetas resumen general -->
+      <section class="cards-grid">
+        <div class="card card--ingresos">
+          <div class="card-top"></div>
+          <p class="card-label">Ingresos</p>
+          <h3 class="card-value">$3,200.000</h3>
+          <span class="card-badge badge--up">+12%</span>
+        </div>
+        <div class="card card--gastos">
+          <div class="card-top"></div>
+          <p class="card-label">Gastos</p>
+          <h3 class="card-value">$2,130.000</h3>
+          <span class="card-badge badge--down">+8.5%</span>
+        </div>
+        <div class="card card--saldo">
+          <div class="card-top"></div>
+          <p class="card-label">Balance neto</p>
+          <h3 class="card-value">$1,070.000</h3>
+          <span class="card-badge badge--up">+18%</span>
+        </div>
+        <div class="card card--ahorro">
+          <div class="card-top"></div>
+          <p class="card-label">Tasa de ahorro</p>
+          <h3 class="card-value">33%</h3>
+          <span class="card-badge badge--neutral">Meta: 40%</span>
+        </div>
+      </section>
+
+        <!-- Gráfico de barras dobles -->
+        <div class="chart-bars">
+
+          <div class="chart-col">
+            <div class="chart-bar-group">
+              <div class="chart-bar bar--income" style="height: 80%"></div>
+              <div class="chart-bar bar--expense" style="height: 55%"></div>
+            </div>
+            <span class="chart-label">Oct</span>
+          </div>
+
+          <div class="chart-col">
+            <div class="chart-bar-group">
+              <div class="chart-bar bar--income" style="height: 70%"></div>
+              <div class="chart-bar bar--expense" style="height: 60%"></div>
+            </div>
+            <span class="chart-label">Nov</span>
+          </div>
+
+          <div class="chart-col">
+            <div class="chart-bar-group">
+              <div class="chart-bar bar--income" style="height: 75%"></div>
+              <div class="chart-bar bar--expense" style="height: 65%"></div>
+            </div>
+            <span class="chart-label">Dic</span>
+          </div>
+
+          <div class="chart-col">
+            <div class="chart-bar-group">
+              <div class="chart-bar bar--income" style="height: 65%"></div>
+              <div class="chart-bar bar--expense" style="height: 50%"></div>
+            </div>
+            <span class="chart-label">Ene</span>
+          </div>
+
+          <div class="chart-col">
+            <div class="chart-bar-group">
+              <div class="chart-bar bar--income" style="height: 72%"></div>
+              <div class="chart-bar bar--expense" style="height: 58%"></div>
+            </div>
+            <span class="chart-label">Feb</span>
+          </div>
+
+          <div class="chart-col">
+            <div class="chart-bar-group">
+              <div class="chart-bar bar--income" style="height: 90%"></div>
+              <div class="chart-bar bar--expense" style="height: 62%"></div>
+            </div>
+            <span class="chart-label">Mar</span>
+          </div>
+
+        </div>
+
+        <div class="chart-legend">
+          <span class="legend-item legend--income">Ingresos</span>
+          <span class="legend-item legend--expense">Gastos</span>
+        </div>
+      </section>
+
+
+      <section class="table-section">
+        <div class="table-header">
+          <h3>Resumen por mes</h3>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Mes</th>
+              <th>Ingresos</th>
+              <th>Gastos</th>
+              <th>Balance</th>
+              <th>Ahorro %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Octubre 2025</td>
+              <td class="amount amount--positive">$3,000.000</td>
+              <td class="amount amount--negative">$2,050.000</td>
+              <td class="amount amount--positive">$950.000</td>
+              <td><span class="card-badge badge--up">32%</span></td>
+            </tr>
+            <tr>
+              <td>Noviembre 2025</td>
+              <td class="amount amount--positive">$2,800.000</td>
+              <td class="amount amount--negative">$2,200.000</td>
+              <td class="amount amount--positive">$600.000</td>
+              <td><span class="card-badge badge--neutral">21%</span></td>
+            </tr>
+            <tr>
+              <td>Diciembre 2025</td>
+              <td class="amount amount--positive">$3,100.000</td>
+              <td class="amount amount--negative">$2,400.000</td>
+              <td class="amount amount--positive">$700.000</td>
+              <td><span class="card-badge badge--neutral">23%</span></td>
+            </tr>
+            <tr>
+              <td>Enero 2026</td>
+              <td class="amount amount--positive">$2,900.000</td>
+              <td class="amount amount--negative">$1,900.000</td>
+              <td class="amount amount--positive">$1,000.000</td>
+              <td><span class="card-badge badge--up">34%</span></td>
+            </tr>
+            <tr>
+              <td>Febrero 2026</td>
+              <td class="amount amount--positive">$3,050.000</td>
+              <td class="amount amount--negative">$2,000.000</td>
+              <td class="amount amount--positive">$1,050.000</td>
+              <td><span class="card-badge badge--up">34%</span></td>
+            </tr>
+            <tr>
+              <td>Marzo 2026</td>
+              <td class="amount amount--positive">$3,200.000</td>
+              <td class="amount amount--negative">$2,130.000</td>
+              <td class="amount amount--positive">$1,070.000</td>
+              <td><span class="card-badge badge--up">33%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

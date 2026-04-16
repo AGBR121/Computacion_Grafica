@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0d0f14;  /* fondo oscuro principal */
+  color: #eef0f6;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* CONTENEDOR DE PANTALLA */
+
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       
+  justify-content: center;    
+  min-height: 100vh;
+  gap: 1.5rem;
+  /* Degradados radiales para dar sensacion de profundidad */
+  background:
+    radial-gradient(circle at 20% 30%, #1e2b14 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, #0e1e2a 0%, transparent 50%),
+    #0d0f14;
+}
+
+
+/* 3. MARCA */
+
+.login-brand {
+  text-align: center;
+}
+
+.login-brand h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #eef0f6;
+}
+
+
+/* CARD DEL FORMULARIO */
+
+.login-card {
+  background: #13161e;       
+  border: 1px solid #252a38;
+  border-radius: 14px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 380px;
+}
+
+.login-card h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+  color: #eef0f6;
+}
+
+
+/* CAMPOS DEL FORMULARIO*/
+
+.form-group {
+  display: flex;
+  flex-direction: column;     /* label arriba, input abajo */
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #8b91a8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.form-group input {
+  background: #1a1e2a;
+  border: 1px solid #252a38;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: #eef0f6;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #c8f04d;
+}
+
+
+/* BOTON DE INGRESAR */
+
+.btn-ingresar {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.85rem;
+  background: #c8f04d;        /* acento verde-lima como fondo */
+  color: #0d0f14;             /* texto oscuro para contraste */
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+  border-radius: 8px;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-ingresar:hover {
+  background: #a0c138;   
+  transform: translateY(-1px);
+}
