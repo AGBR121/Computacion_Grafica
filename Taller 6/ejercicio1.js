@@ -5,9 +5,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Ingresa un número: ', (valor) => {
-  const numero = parseInt(valor);
-
+function esPerfecto(numero) {
   let sumaDivisores = 0;
 
   for (let i = 1; i < numero; i++) {
@@ -21,6 +19,14 @@ rl.question('Ingresa un número: ', (valor) => {
   } else {
     console.log(`${numero} No es un número perfecto`);
   }
+}
+
+rl.question('Ingresa un número: ', (valor) => {
+  const numero = parseInt(valor);
+
+  esPerfecto(numero);
 
   rl.close();
 });
+
+module.exports = { esPerfecto };

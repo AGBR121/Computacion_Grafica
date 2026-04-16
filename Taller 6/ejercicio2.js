@@ -4,8 +4,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Ingresa un número: ', (valor) => {
-    const numero = parseInt(valor);
+function cuadradosOCubos(numero) {
     if(numero % 2 === 0) {
         for(let i = 1; i <= numero; i++) {
             console.log(i*i + " ");
@@ -15,5 +14,12 @@ rl.question('Ingresa un número: ', (valor) => {
             console.log(i*i*i + " ");
         }
     }
+}
+
+rl.question('Ingresa un número: ', (valor) => {
+    const numero = parseInt(valor);
+    cuadradosOCubos(numero);
     rl.close();
 });
+
+module.exports = { cuadradosOCubos };
