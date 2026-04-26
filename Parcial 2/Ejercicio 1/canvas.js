@@ -4,6 +4,7 @@ const ctx = canvas.getContext("2d");
 const px = 160;
 const py = 20;
 
+//Partes de un cubo en forma isométrica
 const rombosuperior = [
     {x: 0, y: 0},
     {x: 30, y: 15}, 
@@ -48,6 +49,7 @@ function dibujarcuadricula(posx, posy) {
                 let x = px - (c * 30) + (f * 30) + posx;
                 let y = py + (c * 15) + (f * 15) + (n * 30) + posy; 
 
+                //Dibujar el cubo
                 dibujarRombo(rombosuperior, x, y);
                 dibujarRombo(romboderecho, x, y);
                 dibujarRombo(romboizquierdo, x, y);
@@ -58,8 +60,9 @@ function dibujarcuadricula(posx, posy) {
 
 
 
-//dibujarcuadricula(600, 0);
+//dibujarcuadricula(600, 0); //Dibujar la cuadricula completa
 
+//Funcion para convertir coordenadas 3D a 2D isometricas
 function iso(x, y, z){
     return {
         x: px - (y * 30) + (x * 30),
@@ -67,7 +70,7 @@ function iso(x, y, z){
     };
 }
 
-
+//Funcion para dibujar una cara de la figura, recibe un array de puntos, el color de relleno y la posicion en x e y
 function cara(puntos, fillcolor, posx, posy){
     ctx.beginPath();
     ctx.moveTo(puntos[0].x + posx, puntos[0].y + posy);
@@ -88,12 +91,6 @@ cara([
     iso(2,0,0),
     iso(2,3,0),
     iso(0,3,0)
-], 'gray',0,0);
-
-//linea izquierda
-cara([
-    iso(0,3,0),
-    iso(0,3,4)
 ], 'gray',0,0);
 
 //piso
