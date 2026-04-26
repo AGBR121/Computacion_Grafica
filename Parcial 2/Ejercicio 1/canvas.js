@@ -6,9 +6,9 @@ const py = 20;
 
 const rombosuperior = [
     {x: 0, y: 0},
-    {x: 30, y: 15},  // Punto derecho más extendido
+    {x: 30, y: 15}, 
     {x: 60, y: 0},
-    {x: 30, y: -15}  // Punto izquierdo más extendido
+    {x: 30, y: -15} 
 ]
 
 const romboderecho= [
@@ -58,7 +58,7 @@ function dibujarcuadricula(posx, posy) {
 
 
 
-dibujarcuadricula(300, 0);
+dibujarcuadricula(600, 0);
 
 function iso(x, y, z){
     return {
@@ -68,11 +68,11 @@ function iso(x, y, z){
 }
 
 
-function cara(puntos, fillcolor){
+function cara(puntos, fillcolor, posx, posy){
     ctx.beginPath();
-    ctx.moveTo(puntos[0].x, puntos[0].y);
+    ctx.moveTo(puntos[0].x + posx, puntos[0].y + posy);
     for(let i = 1; i < puntos.length; i++){
-        ctx.lineTo(puntos[i].x, puntos[i].y);
+        ctx.lineTo(puntos[i].x + posx, puntos[i].y + posy);
     }
     ctx.closePath();
     ctx.fillStyle = fillcolor;
@@ -88,13 +88,13 @@ cara([
     iso(2,0,0),
     iso(2,3,0),
     iso(0,3,0)
-], 'gray');
+], 'gray',0,0);
 
 //linea izquierda
 cara([
     iso(0,3,0),
     iso(0,3,4)
-], 'gray');
+], 'gray',0,0);
 
 //piso
 cara([
@@ -102,14 +102,14 @@ cara([
     iso(0,3,4),
     iso(4,3,4),
     iso(4,3,3)
-], 'gray')
+], 'gray',0,0)
 
 cara([
     iso(4,3,3),
     iso(4,3,4),
     iso(4,0,4),
     iso(4,0,3)
-], 'gray')
+], 'gray',0,0)
 
 //superiorderecha
 
@@ -118,14 +118,14 @@ cara([
     iso(4,0,3),
     iso(4,3,3),
     iso(3,4,0)
-], 'gray')
+], 'gray',0,0)
 
 cara([
     iso(4,2,-1),
     iso(2,0,0),
     iso(2,3,0),
     iso(2,3,1)
-], 'gray')
+], 'gray',0,0)
 
 cara([
     iso(0,3,0),
@@ -134,6 +134,107 @@ cara([
     iso(4,3,3),
     iso(3,4,0),
     iso(3,4,-1)
-], 'gray');
+], 'gray',0,0);
 
 //FIGURA 2
+cara([
+    iso(0,4,4),
+    iso(0,4,6),
+    iso(2,4,6),
+    iso(2,4,4)
+], 'blue', 300, 0);
+
+cara([
+    iso(0,4,4),
+    iso(2,4,4),
+    iso(2,2.5,4),
+    iso(0,2.5,4)
+], 'blue', 300, 0);
+
+cara([
+    iso(2,2.5,4),
+    iso(0,2.5,4),
+    iso(0,2.5,3),
+    iso(2,2.5,3)
+], 'blue', 300, 0);
+
+cara([
+    iso(0,2.5,3),
+    iso(2,2.5,3),
+    iso(2,1.5,3),
+    iso(0,1.5,3)
+], 'blue', 300, 0);
+
+cara([
+    iso(0,1.5,3),
+    iso(2,1.5,3),
+    iso(2,1.5,2),
+    iso(0,1.5,2)
+], 'blue', 300, 0);
+
+cara([
+    iso(2,1.5,2),
+    iso(0,1.5,2),
+    iso(0,0,2),
+    iso(2,0,2)
+], 'blue', 300, 0);
+
+cara([
+    iso(2,0,2),
+    iso(2,0,6),
+    iso(2,4,6),
+    iso(2,4,4),
+    iso(2,2.5,4),
+    iso(2,2.5,3),
+    iso(2,1.5,3),
+    iso(2,1.5,2)
+], 'blue', 300, 0);
+
+//FIGURA 4
+
+cara([
+    iso(0,0,0),
+    iso(1.2, 0,0),
+    iso(1.2, 1.3,0),
+    iso(0,1.3,0)
+], 'red', 600, 400);
+
+cara([
+    iso(2,0,0),
+    iso(3,0,0),
+    iso(3,1.5,0),
+    iso(2,1.5,0)
+], 'red', 600, 400);
+
+cara([
+    iso(1.2,0,0),
+    iso(1.2,0,0.8),
+    iso(2,1.5,0),
+    iso(1.8,2.8,0),
+    iso(1.2,1.3,0)
+], 'red', 600, 400);
+
+cara([
+    iso(1.2,0.6,0.8),
+    iso(1.2,1.4,1.5),
+    iso(1.8,2.8,0)
+], 'red', 600, 400);
+
+cara([
+    iso(0,1.3,0),
+    iso(0,3.92,2),
+    iso(3,4,2),
+    iso(3,1.5,0),
+    iso(2,1.5,0),
+    iso(1.2,1.4,1.5),
+    iso(1.8,2.8,0),
+    iso(1.2, 1.3,0)
+], 'red', 600, 400);
+
+cara([
+    iso(3,4,2),
+    iso(3.1,4,2),
+    iso(3.2,0,2),
+    iso(3,0,0),
+    iso(3,1.5,0)
+], 'red', 600, 400);
