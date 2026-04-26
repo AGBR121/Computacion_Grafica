@@ -86,6 +86,7 @@ function cara(puntos, fillcolor, posx, posy){
 
 
 //FIGURA 1
+//Cara superior
 cara([
     iso(0,0,0),
     iso(2,0,0),
@@ -94,13 +95,14 @@ cara([
 ], 'gray',0,0);
 
 //piso
+//inferior izquierda
 cara([
     iso(0,3,3),
     iso(0,3,4),
     iso(4,3,4),
     iso(4,3,3)
 ], 'gray',0,0)
-
+//inferior derecha
 cara([
     iso(4,3,3),
     iso(4,3,4),
@@ -108,8 +110,7 @@ cara([
     iso(4,0,3)
 ], 'gray',0,0)
 
-//superiorderecha
-
+//Lateral derecha
 cara([
     iso(4,2,-1),
     iso(4,0,3),
@@ -117,6 +118,7 @@ cara([
     iso(3,4,0)
 ], 'gray',0,0)
 
+//superiorderecha
 cara([
     iso(4,2,-1),
     iso(2,0,0),
@@ -124,16 +126,18 @@ cara([
     iso(2,3,1)
 ], 'gray',0,0)
 
+//Lateral izquierda
 cara([
     iso(0,3,0),
-    iso(0,3,4),
-    iso(4,3,4),
+    iso(0,3,3),
+    iso(4,3,3),
     iso(4,3,3),
     iso(3,4,0),
     iso(3,4,-1)
 ], 'gray',0,0);
 
 //FIGURA 2
+//Cara izquierda inferior
 cara([
     iso(0,4,4),
     iso(0,4,6),
@@ -141,6 +145,7 @@ cara([
     iso(2,4,4)
 ], 'blue', 300, 0);
 
+//Piso inferior izquierda
 cara([
     iso(0,4,4),
     iso(2,4,4),
@@ -148,6 +153,7 @@ cara([
     iso(0,2.5,4)
 ], 'blue', 300, 0);
 
+//Cara izquierda central
 cara([
     iso(2,2.5,4),
     iso(0,2.5,4),
@@ -155,6 +161,7 @@ cara([
     iso(2,2.5,3)
 ], 'blue', 300, 0);
 
+//Piso central
 cara([
     iso(0,2.5,3),
     iso(2,2.5,3),
@@ -162,6 +169,7 @@ cara([
     iso(0,1.5,3)
 ], 'blue', 300, 0);
 
+//Cara izquierda superior
 cara([
     iso(0,1.5,3),
     iso(2,1.5,3),
@@ -169,6 +177,7 @@ cara([
     iso(0,1.5,2)
 ], 'blue', 300, 0);
 
+//Piso superior
 cara([
     iso(2,1.5,2),
     iso(0,1.5,2),
@@ -176,6 +185,7 @@ cara([
     iso(2,0,2)
 ], 'blue', 300, 0);
 
+//cara lateral derecha completa
 cara([
     iso(2,0,2),
     iso(2,0,6),
@@ -189,6 +199,7 @@ cara([
 
 //FIGURA 4
 
+//Cara superior izquierda
 cara([
     iso(0,0,0),
     iso(1.2, 0,0),
@@ -196,6 +207,7 @@ cara([
     iso(0,1.3,0)
 ], 'red', 600, 250);
 
+//Cara superior derecha
 cara([
     iso(2,0,0),
     iso(3,0,0),
@@ -203,6 +215,7 @@ cara([
     iso(2,1.5,0)
 ], 'red', 600, 250);
 
+//Trapecio central
 cara([
     iso(1.2,0,0),
     iso(1.2,0,0.8),
@@ -211,12 +224,14 @@ cara([
     iso(1.2,1.3,0)
 ], 'red', 600, 250);
 
+//triangulo central
 cara([
     iso(1.2,0.6,0.8),
     iso(1.2,1.4,1.5),
     iso(1.8,2.8,0)
 ], 'red', 600, 250);
 
+//Cara izquierda
 cara([
     iso(0,1.3,0),
     iso(0,3.92,2),
@@ -228,6 +243,7 @@ cara([
     iso(1.2, 1.3,0)
 ], 'red', 600, 250);
 
+//Cara derecha
 cara([
     iso(3,4,2),
     iso(3.1,4,2),
@@ -237,6 +253,7 @@ cara([
 ], 'red', 600, 250);
 
 //FIGURA 3
+//Cara izquierda
 cara([
     iso(0.2,2.2,0),
     iso(0.2,2.2,4.8),
@@ -246,6 +263,7 @@ cara([
     iso(1.2,2.2,0)
 ], 'green',600,0);
 
+//Cara superior
 cara([
     iso(1.2,2.2,0),
     iso(1.2,1.3,0),
@@ -255,6 +273,7 @@ cara([
     iso(0.2,2.2,0)
 ], 'green',600,0);
 
+//Cara izquierda pequeña superior
 cara([
     iso(1.2,2.2,1.8),
     iso(1.2,2.2,0),
@@ -262,6 +281,7 @@ cara([
     iso(1.2,1.3,1.8),
 ], 'green',600,0);
 
+//Cara derecha pequeña superior
 cara([
     iso(1.2,1.3,0),
     iso(2.2,1.3,0),
@@ -269,6 +289,7 @@ cara([
     iso(1.2,1.3,1.8)
 ], 'green',600,0);
 
+//Cara derecha grande central
 cara([
     iso(3.8,2.2,1.8),
     iso(1.2,2.2,1.8),
@@ -278,6 +299,7 @@ cara([
     iso(5.7,-0.5,1.8)
 ], 'green',600,0)
 
+//Cara entre la superior y la central
 cara([
     iso(2.2,1.3,0),
     iso(2.2,-0.5,0),
@@ -285,6 +307,7 @@ cara([
     iso(2.2,1.3,1.8)
 ], 'green',600,0)
 
+//Cara entre la derecha grande central y la cara inferior
 cara([
     iso(5.7,-0.5,1.8),
     iso(5.7,-0.5,3),
@@ -292,6 +315,7 @@ cara([
     iso(3.8,2.2,1.8)
 ], 'green',600,0)
 
+//Cara inferior
 cara([
     iso(4.8,0,3.4),
     iso(3.8,2.2,3.3),
