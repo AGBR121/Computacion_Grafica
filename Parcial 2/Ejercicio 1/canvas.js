@@ -197,61 +197,6 @@ cara([
     iso(2,1.5,2)
 ], 'blue', 300, 0);
 
-//FIGURA 4
-
-//Cara superior izquierda
-cara([
-    iso(0,0,0),
-    iso(1.2, 0,0),
-    iso(1.2, 1.3,0),
-    iso(0,1.3,0)
-], 'red', 600, 250);
-
-//Cara superior derecha
-cara([
-    iso(2,0,0),
-    iso(3,0,0),
-    iso(3,1.5,0),
-    iso(2,1.5,0)
-], 'red', 600, 250);
-
-//Trapecio central
-cara([
-    iso(1.2,0,0),
-    iso(1.2,0,0.8),
-    iso(2,1.5,0),
-    iso(1.8,2.8,0),
-    iso(1.2,1.3,0)
-], 'red', 600, 250);
-
-//triangulo central
-cara([
-    iso(1.2,0.6,0.8),
-    iso(1.2,1.4,1.5),
-    iso(1.8,2.8,0)
-], 'red', 600, 250);
-
-//Cara izquierda
-cara([
-    iso(0,1.3,0),
-    iso(0,3.92,2),
-    iso(3,4,2),
-    iso(3,1.5,0),
-    iso(2,1.5,0),
-    iso(1.2,1.4,1.5),
-    iso(1.8,2.8,0),
-    iso(1.2, 1.3,0)
-], 'red', 600, 250);
-
-//Cara derecha
-cara([
-    iso(3,4,2),
-    iso(3.1,4,2),
-    iso(3.2,0,2),
-    iso(3,0,0),
-    iso(3,1.5,0)
-], 'red', 600, 250);
-
 //FIGURA 3
 //Cara izquierda
 cara([
@@ -322,3 +267,58 @@ cara([
     iso(3.8,2.2,4.8),
     iso(4.8,0,3.7)
 ], 'green',600,0)
+
+//FIGURA 4
+
+//Cara superior izquierda
+cara([
+    iso(0,0,0),
+    iso(1.2, 0,0),
+    iso(1.2, 1.3,0),
+    iso(0,1.3,0)
+], 'red', 600, 250);
+
+//Cara superior derecha
+cara([
+    iso(2,0,0),
+    iso(3,0,0),
+    iso(3,1.5,0),
+    iso(2,1.5,0)
+], 'red', 600, 250);
+
+//Trapecio central
+cara([
+    iso(1.2,0,0),
+    iso(1.2,0,0.8),
+    iso(2,1.5,0),
+    iso(1.8,2.8,0),
+    iso(1.2,1.3,0)
+], 'red', 600, 250);
+
+//triangulo central
+cara([
+    iso(1.2,0.6,0.8),
+    iso(1.2,1.4,1.5),
+    iso(1.8,2.8,0)
+], 'red', 600, 250);
+
+//Cara izquierda
+cara([
+    iso(0,1.3,0),
+    iso(0,3.92,2),
+    iso(3,4,2),
+    iso(3,1.5,0),
+    iso(2,1.5,0),
+    iso(1.2,1.4,1.5),
+    iso(1.8,2.8,0),
+    iso(1.2, 1.3,0)
+], 'red', 600, 250);
+
+//Cara derecha
+cara([
+    iso(3,4,2),
+    iso(3.1,4,2),
+    iso(3.2,0,2),
+    iso(3,0,0),
+    iso(3,1.5,0)
+], 'red', 600, 250);
