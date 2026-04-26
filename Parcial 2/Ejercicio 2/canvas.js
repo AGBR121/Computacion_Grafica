@@ -41,5 +41,4 @@
     }
     ctx.strokeStyle = '#0070f0';
     ctx.lineWidth = 2;
-    ctx.lineJoin = 'round';
     ctx.stroke();
