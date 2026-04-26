@@ -1,13 +1,13 @@
  const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
  
-    const datos = [40, 120, 60, 90, 50, 130, 80, 200, 500]; 
+    const datos = [40, 120, 60, 90, 50, 130, 80, 200, 300, 150]; 
  
     //Margenes y dimensiones del gráfico
-    const margenIzq  = 50;
+    const margenIzq  = 25;
     const margenDer  = 30;
     const margenSup  = 30;
-    const margenInf  = 40;
+    const margenInf  = 25;
  
     const anchoGrafico = canvas.width  - margenIzq - margenDer;
     const altoGrafico  = canvas.height - margenSup - margenInf;
