@@ -1,5 +1,6 @@
 # Temas para la exposición de videojuegos
-
+- En parejas
+- Duración: 10 minutos
 ## Elementos para la exposición: 
 - Historia
 - Proyectos
